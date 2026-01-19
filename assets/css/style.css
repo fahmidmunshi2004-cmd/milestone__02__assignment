@@ -1,0 +1,159 @@
+/* common class css */
+:root {
+    --bg-main: #1a0b2e;
+    --text-primary: #ffffff;
+    --highlight-success: #00ff88;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: var(--bg-main);
+    scroll-behavior: smooth;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*===== common css =====*/
+.common__btn {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 9px 17px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6.5px;
+    border-radius: 50px;
+    border: 1.5px solid #1A0B2E;
+    position: relative;
+    color: #fff;
+    background: none;
+    overflow: hidden;
+    transition: color .3s ease, border-color .3s ease;
+}
+
+.common__btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(48deg, #f7e93f 0%, #fb09b4 51.12%, #9100f8 100%);
+    border-radius: inherit;
+    z-index: -1;
+    transition: opacity .3s ease;
+    opacity: 1;
+}
+
+.common__btn:hover::before {
+    opacity: 0;
+}
+
+.common__btn:hover {
+    border: 1.5px solid #fb09b4;
+    color: #fb09b4;
+}
+
+.common__btn__2 {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 9px 17px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6.5px;
+    border-radius: 50px;
+    border: 1.5px solid #00FF88;
+    position: relative;
+    color: #00FF88;
+    background: none;
+    overflow: hidden;
+    transition: .3s linear;
+}
+
+.common__btn__2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    border-radius: inherit;
+    z-index: -1;
+    transition: opacity .3s ease;
+    opacity: 1;
+    transition: .3s linear;
+}
+
+.common__btn__2:hover::before {
+    background: #00FF88;
+}
+
+.common__btn__2:hover {
+    border: 1.5px solid transparent;
+    color: #000;
+}
+
+/*=============== hover animation ============*/
+.custom__border {
+    position: relative;
+    transition: .3s linear;
+}
+
+.custom__border::before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(48deg, #f7e93f 0%, #fb09b4 51.12%, #9100f8 100%);
+    width: 0;
+    height: 1.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    transition: .3s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.custom__border:hover {
+    color: #fb09b4;
+}
+
+.custom__border:hover:before {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*====== badge keyframe ======*/
+@keyframes bounceBadge {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-bounceBadge {
+    animation: bounceBadge 1s ease-in-out infinite;
+}
+
+/* spotify-icon */
+.spotify-icon::after {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 23px;
+    border: 1px solid;
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
