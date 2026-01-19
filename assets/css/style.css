@@ -158,3 +158,39 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+/*========== play btn =========*/
+
+.play-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(48deg,#f7e93f,#fb09b4,#9100f8);
+  z-index: 0;
+  animation: pulseBefore 1.5s linear infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes pulseBefore {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  30% {
+    transform: scale(1.25);
+    opacity: 0.5;
+  }
+
+  60% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
