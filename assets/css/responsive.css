@@ -1,0 +1,5 @@
+@media (max-width: 370px) {
+    .about-area .col-span-6 {
+        grid-column: span 12 / span 12;
+    }
+}

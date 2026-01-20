@@ -8,6 +8,7 @@
 
     <!-- css-link -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 
     <!-- fav-icon-link -->
     <link rel="shortcut icon" href="./assets/img/logo/fav-icon.png" type="image/x-icon">
@@ -31,14 +32,14 @@
 <body>
     <!-- header-start -->
     <header class="header-area py-6 border-b border-b-[rgba(255,255,255,0.1)]">
-        <div class="container">
+        <div class="container px-5 2xl:p-0">
             <div class="header-content flex items-center justify-between">
                 <div class="header-left">
                     <a href="#" class="main-logo">
-                        <img src="./assets/img/logo/main-logo.png" alt="">
+                        <img class="w-[135px] md:w-full" src="./assets/img/logo/main-logo.png" alt="">
                     </a>
                 </div>
-                <div class="header-centar">
+                <div class="header-centar hidden md:block">
                     <div class="main-menu">
                         <nav>
                             <ul class="flex items-center gap-8">
@@ -50,9 +51,12 @@
                     </div>
                 </div>
                 <div class="header-right">
-                    <a href="#" class="common__btn">
+                    <a href="#" class="common__btn !hidden md:block">
                         Subscribe
                         <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="toogle-btn">
+                        <i class="fa-solid fa-bars text-[#fb09b4] text-2xl"></i>
                     </a>
                 </div>
             </div>
@@ -65,28 +69,28 @@
 
         <!-- hero-start -->
         <section
-            class="hero-area py-[105px] mb-[50px] bg-[url('./assets/img/bg/hero-bg.png')] bg-cover bg-center bg-no-repeat">
-            <div class="container">
+            class="hero-area py-10 lg:py-[105px] mb-10 lg:mb-[50px] bg-[url('./assets/img/bg/hero-bg.png')] bg-cover bg-center bg-no-repeat">
+            <div class="container px-5 2xl:p-0">
                 <div class="hero-circle flex items-center justify-center relative mb-10">
-                    <img src="./assets/img/hero/hero-circle.png" alt="">
+                    <img class="w-[200px] h-[200px] lg:w-[300px] lg:h-[300px]" src="./assets/img/hero/hero-circle.png" alt="">
                     <div class="microphone absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                        <img src="./assets/img/hero/microphone.png" alt="">
+                        <img class="h-[70px] lg:h-full" src="./assets/img/hero/microphone.png" alt="">
                     </div>
-                    <div class="badge absolute top-3 right-[38%] animate-bounceBadge">
+                    <div class="badge absolute top-3 right-[26%] lg:right-[38%] animate-bounceBadge">
                         <span
-                            class="text-xl font-semibold text-[#1A0B2E] bg-[#00ff88] shadow-[0_3px_27px_0_rgba(0,255,136,0.5)] rounded-[50px] block px-[14px] py-[5px]">
+                            class="text-base lg:text-xl font-semibold text-[#1A0B2E] bg-[#00ff88] shadow-[0_3px_27px_0_rgba(0,255,136,0.5)] rounded-[50px] block px-[14px] py-[5px]">
                             NEW
                         </span>
                     </div>
                 </div>
                 <div class="hero-content text-center">
-                    <h1 class="title text-[60px] font-extrabold mb-3 leading-[1]">
+                    <h1 class="title text-[40px] lg:text-[60px] font-extrabold mb-3 leading-[1]">
                         TechWave
                     </h1>
                     <p class="text-base font-normal text-white opacity-[0.8] mb-5">
                         Your daily dose of tech insights, productivity hacks, and personal growth
                     </p>
-                    <div class="hero-btn flex items-center gap-2 justify-center">
+                    <div class="hero-btn flex flex-wrap  items-center gap-2 justify-center">
                         <a href="#" class="common__btn z-[1] !px-[27px] !gap-[10px]">
                             <i class="fa-brands fa-spotify relative !w-4 h-4 text-base spotify-icon"></i>
                             Listen on Spotify
@@ -102,28 +106,28 @@
         <!-- hero-end -->
 
         <!-- about-start -->
-        <section class="about-area mb-[120px]">
-            <div class="container">
-                <div class="section-title text-center mb-[80px] pb-[80px] border-b border-b-[rgba(255,255,255,0.1)]">
-                    <h2 class="text-5xl font-bold mb-4">
+        <section class="about-area mb-10 lg:mb-[120px]">
+            <div class="container px-5 2xl:p-0">
+                <div class="section-title text-center mb-4 lg:mb-10 lg:mb-[80px] pb-10 lg:pb-[80px] border-b border-b-[rgba(255,255,255,0.1)]">
+                    <h2 class="text-[32px] lg:text-5xl font-bold mb-4">
                         About the Podcast
                     </h2>
                     <p class="text-base font-normal text-white opacity-[0.8]">
-                        TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>
+                        TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br class="hidden lg:block">
                         We break down complex topics into digestible insights, explore productivity strategies that
-                        actually work, <br>
+                        actually work, <br class="hidden lg:block">
                         and share stories of personal growth from industry leaders.
 
-                        <span class="mt-10 block">
+                        <span class="mt-4 lg:mt-10 block">
                             Join thousands of young professionals and tech enthusiasts who start their day with
                             TechWave.
                         </span>
                     </p>
                 </div>
-                <div class="grid grid-cols-12 gap-10">
-                    <div class="col-span-3">
+                <div class="grid grid-cols-12 gap-4 lg:gap-10">
+                    <div class="col-span-6 lg:col-span-3">
                         <div class="count-box-content text-center">
-                            <h3 class="font-black text-5xl text-[#00FF88] mb-3">
+                            <h3 class="font-black text-[40px] lg:text-5xl text-[#00FF88] mb-1 lg:mb-3">
                                 150K+
                             </h3>
                             <p class="text-base font-normal text-white opacity-[0.8]">
@@ -131,9 +135,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-span-3">
+                    <div class="col-span-6 lg:col-span-3">
                         <div class="count-box-content text-center">
-                            <h3 class="font-black text-5xl text-[#00FF88] mb-3">
+                            <h3 class="font-black text-[40px] lg:text-5xl text-[#00FF88] mb-1 lg:mb-3">
                                 200+
                             </h3>
                             <p class="text-base font-normal text-white opacity-[0.8]">
@@ -141,9 +145,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-span-3">
+                    <div class="col-span-6 lg:col-span-3">
                         <div class="count-box-content text-center">
-                            <h3 class="font-black text-5xl text-[#00FF88] mb-3">
+                            <h3 class="font-black text-[40px] lg:text-5xl text-[#00FF88] mb-1 lg:mb-3">
                                 4.9★
                             </h3>
                             <p class="text-base font-normal text-white opacity-[0.8]">
@@ -151,9 +155,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-span-3">
+                    <div class="col-span-6 lg:col-span-3">
                         <div class="count-box-content text-center">
-                            <h3 class="font-black text-5xl text-[#00FF88] mb-3">
+                            <h3 class="font-black text-[40px] lg:text-5xl text-[#00FF88] mb-1 lg:mb-3">
                                 50+
                             </h3>
                             <p class="text-base font-normal text-white opacity-[0.8]">
@@ -167,21 +171,21 @@
         <!-- about-end -->
 
         <!-- Why Choose us start -->
-        <section class="why-choose-us bg-[#230E3D] py-[120px] mb-[120px]">
-            <div class="container">
-                <div class="section-title text-center mb-10">
-                    <h2 class="text-5xl font-bold mb-4">
+        <section class="why-choose-us bg-[#230E3D] py-10 lg:py-[120px] mb-10 lg:mb-[120px]">
+            <div class="container px-5 2xl:p-0">
+                <div class="section-title text-center mb-4 lg:mb-10">
+                    <h2 class="text-[32px] lg:text-5xl font-bold mb-4">
                         Why Choose TechWave
                     </h2>
                 </div>
-                <div class="grid grid-cols-12 grid-rows-12 gap-[30px]">
-                    <div class="col-span-4 row-span-8">
+                <div class="grid grid-cols-12 lg:grid-rows-12 gap-4 lg:gap-[30px]">
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4 lg:row-span-8">
                         <div
-                            class="why-choose-us-box  h-full flex flex-col justify-center bg-[rgba(53,17,101,0.4)] rounded-[40px] p-10">
+                            class="why-choose-us-box  h-full flex flex-col justify-center bg-[rgba(53,17,101,0.4)] rounded-[24px] lg:rounded-[40px] p-6 lg:p-10">
                             <div class="icon mb-5">
                                 <img src="./assets/img/icons/headphones-01.svg" alt="">
                             </div>
-                            <h3 class="font-bold text-2xl mb-3">
+                            <h3 class="font-bold text-xl lg:text-2xl mb-3">
                                 Premium Audio Quality
                             </h3>
                             <p class="text-base font-normal text-white opacity-[0.8] leading-[150%]">
@@ -191,13 +195,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-span-8 row-span-4">
+                    <div class="col-span-12 md:col-span-6 lg:col-span-8 lg:row-span-4">
                         <div
-                            class="why-choose-us-box  h-full flex flex-col justify-center bg-[rgba(53,17,101,0.4)] rounded-[40px] p-10">
+                            class="why-choose-us-box  h-full flex flex-col justify-center bg-[rgba(53,17,101,0.4)] rounded-[24px] lg:rounded-[40px] p-6 lg:p-10">
                             <div class="icon mb-5">
                                 <img src="./assets/img/icons/phone-01.svg" alt="">
                             </div>
-                            <h3 class="font-bold text-2xl mb-3">
+                            <h3 class="font-bold text-xl lg:text-2xl mb-3">
                                 Mobile Friendly
                             </h3>
                             <p class="text-base font-normal text-white opacity-[0.8] leading-[150%]">
@@ -205,13 +209,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-span-8 row-span-4">
+                    <div class="col-span-12 md:col-span-6 lg:col-span-8 lg:row-span-4">
                         <div
-                            class="why-choose-us-box  h-full flex flex-col justify-center bg-[rgba(53,17,101,0.4)] rounded-[40px] p-10">
+                            class="why-choose-us-box  h-full flex flex-col justify-center bg-[rgba(53,17,101,0.4)] rounded-[24px] lg:rounded-[40px] p-6 lg:p-10">
                             <div class="icon mb-5">
                                 <img src="./assets/img/icons/globe-05.svg" alt="">
                             </div>
-                            <h3 class="font-bold text-2xl mb-3">
+                            <h3 class="font-bold text-xl lg:text-2xl mb-3">
                                 Global Community
                             </h3>
                             <p class="text-base font-normal text-white opacity-[0.8] leading-[150%]">
@@ -219,13 +223,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-span-8 row-span-4">
+                    <div class="col-span-12 md:col-span-6 lg:col-span-8 lg:row-span-4">
                         <div
-                            class="why-choose-us-box  h-full flex flex-col justify-center bg-[rgba(53,17,101,0.4)] rounded-[40px] p-10">
+                            class="why-choose-us-box  h-full flex flex-col justify-center bg-[rgba(53,17,101,0.4)] rounded-[24px] lg:rounded-[40px] p-6 lg:p-10">
                             <div class="icon mb-5">
                                 <img src="./assets/img/icons/zap-fast.svg" alt="">
                             </div>
-                            <h3 class="font-bold text-2xl mb-3">
+                            <h3 class="font-bold text-xl lg:text-2xl mb-3">
                                 Exclusive Interviews
                             </h3>
                             <p class="text-base font-normal text-white opacity-[0.8] leading-[150%]">
@@ -235,13 +239,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-span-4 row-span-4">
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4 lg:row-span-4">
                         <div
-                            class="why-choose-us-box  h-full flex flex-col justify-center h-full flex flex-col justify-center bg-[rgba(53,17,101,0.4)] rounded-[40px] p-10">
+                            class="why-choose-us-box  h-full flex flex-col justify-center h-full flex flex-col justify-center bg-[rgba(53,17,101,0.4)] rounded-[24px] lg:rounded-[40px] p-6 lg:p-10">
                             <div class="icon mb-5">
                                 <img src="./assets/img/icons/book-open-01.svg" alt="">
                             </div>
-                            <h3 class="font-bold text-2xl mb-3">
+                            <h3 class="font-bold text-xl lg:text-2xl mb-3">
                                 Rich Resources
                             </h3>
                             <p class="text-base font-normal text-white opacity-[0.8] leading-[150%]">
@@ -255,18 +259,18 @@
         <!-- Why Choose us end -->
 
         <!-- Featured Episodes start -->
-        <section class="featured-area-start mb-[120px]">
-            <div class="container">
-                <div class="section-title text-center mb-10">
-                    <h2 class="text-5xl font-bold mb-4">
+        <section class="featured-area-start mb-10 lg:mb-[120px]">
+            <div class="container px-5 2xl:p-0">
+                <div class="section-title text-center mb-4 lg:mb-10">
+                    <h2 class="text-[32px] lg:text-5xl font-bold mb-4">
                         Featured Episodes
                     </h2>
                 </div>
                 <div class="grid grid-cols-12 gap-[30px]">
-                    <div class="col-span-4">
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4">
                         <div class="feature-box bg-[#250D44] rounded-[24px] overflow-hidden">
-                            <div class="feature-img rounded-[24px_24px_0_0] relative">
-                                <img class="rounded-[24px_24px_0_0]" src="./assets/img/feature/feature-01.jpg" alt="">
+                            <div class="feature-img rounded-[24px_24px_0_0] w-full relative">
+                                <img class="rounded-[24px_24px_0_0] w-full" src="./assets/img/feature/feature-01.jpg" alt="">
                                 <a href="https://www.youtube.com/embed/-fehL7RoVEA" target="_blank"
                                     class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <span
@@ -280,7 +284,7 @@
                                 ses ar video ta bolesilo iframe diya video add korta. -->
                             </div>
                             <div class="feature-content p-6 flex flex-col justify-center gap-3">
-                                <h3 class="font-bold text-2xl">
+                                <h3 class="font-bold text-xl lg:text-2xl">
                                     The Future of AI in Everyday Life
                                 </h3>
                                 <p class="text-base font-normal">
@@ -294,10 +298,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-4">
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4">
                         <div class="feature-box bg-[#250D44] rounded-[24px] overflow-hidden">
-                            <div class="feature-img rounded-[24px_24px_0_0] relative">
-                                <img class="rounded-[24px_24px_0_0]" src="./assets/img/feature/feature-02.jpg" alt="">
+                            <div class="feature-img rounded-[24px_24px_0_0] w-full relative">
+                                <img class="rounded-[24px_24px_0_0] w-full" src="./assets/img/feature/feature-02.jpg" alt="">
                                 <a href="https://www.youtube.com/watch?v=fMROQRzDJnk" target="_blank"
                                     class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <span
@@ -307,7 +311,7 @@
                                 </a>
                             </div>
                             <div class="feature-content p-6 flex flex-col justify-center gap-3">
-                                <h3 class="font-bold text-2xl">
+                                <h3 class="font-bold text-xl lg:text-2xl">
                                     Building Better Habits for Remote Work
                                 </h3>
                                 <p class="text-base font-normal">
@@ -321,10 +325,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-4">
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4">
                         <div class="feature-box bg-[#250D44] rounded-[24px] overflow-hidden">
-                            <div class="feature-img rounded-[24px_24px_0_0] relative">
-                                <img class="rounded-[24px_24px_0_0]" src="./assets/img/feature/feature-03.jpg" alt="">
+                            <div class="feature-img rounded-[24px_24px_0_0] w-full relative">
+                                <img class="rounded-[24px_24px_0_0] w-full" src="./assets/img/feature/feature-03.jpg" alt="">
                                 <a href="https://www.youtube.com/watch?v=HrMdJMdRutQ" target="_blank"
                                     class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <span
@@ -334,7 +338,7 @@
                                 </a>
                             </div>
                             <div class="feature-content p-6 flex flex-col justify-center gap-3">
-                                <h3 class="font-bold text-2xl">
+                                <h3 class="font-bold text-xl lg:text-2xl">
                                     Career Growth in Tech: A Roadmap
                                 </h3>
                                 <p class="text-base font-normal">
@@ -354,29 +358,29 @@
         <!-- Featured Episodes end -->
 
         <!-- Meet the Host start -->
-        <section class="meet-the-host mb-[120px]">
-            <div class="container">
-                <div class="section-title text-center mb-10">
-                    <h2 class="text-5xl font-bold mb-4">
+        <section class="meet-the-host mb-10 lg:mb-[120px]">
+            <div class="container px-5 2xl:p-0">
+                <div class="section-title text-center mb-4 lg:mb-10">
+                    <h2 class="text-[32px] lg:text-5xl font-bold mb-4">
                         Meet the Host
                     </h2>
                 </div>
-                <div class="meet-the-host-content bg-[#35116566] rounded-[40px] p-10">
-                    <div class="content flex items-center gap-6">
+                <div class="meet-the-host-content bg-[#35116566] rounded-[24px] lg:rounded-[40px] p-4 lg:p-10">
+                    <div class="content flex flex-col lg:flex-row items-center gap-6">
                         <div class="left-side">
                             <div class="meet-img w-[200px] h-[200px] rounded-full overflow-hidden">
                                 <img class="w-full h-full rounded-full object-cover transition-all duration-300 hover:scale-110 hover:-translate-y-2 hover:z-10 hover:shadow-xl" src="./assets/img/meet/meeet-01.png" alt="">
                             </div>
                         </div>
                         <div class="right-side">
-                            <div class="info">
+                            <div class="info text-center lg:text-start">
                                 <h3 class="font-bold text-[32px] leading-[1] mb-4">
                                     Alex Kumar
                                 </h3>
                                 <p class="text-base font-normal text-white opacity-[0.6] mb-4 leading-[150%]">
                                     Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.
                                 </p>
-                                <div class="social-area flex items-center gap-2">
+                                <div class="social-area flex items-center justify-center lg:justify-start gap-2">
                                     <a href="#" class="social-icon">
                                         <img class="transition duration-300" src="./assets/img/icons/social-01.svg" alt="">
                                     </a>
@@ -402,28 +406,28 @@
     <!-- main-end -->
 
     <!-- footer-start -->
-    <footer class="footer-area py-[120px] bg-[url('./assets/img/bg/footer-bg.jpg')] bg-cover bg-center bg-no-repeat">
-        <div class="container">
-            <div class="footer-content flex flex-col items-center justify-center gap-8">
+    <footer class="footer-area py-10 lg:py-[120px] bg-[url('./assets/img/bg/footer-bg.jpg')] bg-cover bg-center bg-no-repeat">
+        <div class="container px-5 2xl:p-0">
+            <div class="footer-content flex flex-col items-center justify-center gap-6 lg:gap-8">
                 <div class="logo">
                     <a href="#">
-                        <img src="./assets/img/logo/footer-logo.png" alt="">
+                        <img class="w-[220px]" src="./assets/img/logo/footer-logo.png" alt="">
                     </a>
                 </div>
-                <div class="socil-info flex items-center gap-10">
-                    <a href="#" class="text-base font-semibold custom__border">
+                <div class="socil-info flex flex-wrap lg:flex-nowrap items-center justify-center gap-4 lg:gap-10">
+                    <a href="#" class="w-[48%] lg:w-max text-center lg:text-start text-base font-semibold custom__border">
                         <i class="fa-brands fa-spotify"></i>
                         Spotify
                     </a>
-                    <a href="#" class="text-base font-semibold custom__border">
+                    <a href="#" class="w-[48%] lg:w-max text-center lg:text-start text-base font-semibold custom__border">
                         <i class="fa-solid fa-podcast"></i>
                         Apple Podcasts
                     </a>
-                    <a href="#" class="text-base font-semibold custom__border">
+                    <a href="#" class="w-[48%] lg:w-max text-center lg:text-start text-base font-semibold custom__border">
                         <i class="fa-brands fa-youtube"></i>
                         YouTube
                     </a>
-                    <a href="#" class="text-base font-semibold custom__border">
+                    <a href="#" class="w-[48%] lg:w-max text-center lg:text-start text-base font-semibold custom__border">
                         <i class="fa-brands fa-twitter"></i>
                         Twitter
                     </a>
